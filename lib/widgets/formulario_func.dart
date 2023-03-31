@@ -15,12 +15,12 @@ class _FormularioState extends State<Formulario> {
         title: const Text("Formulario"),
       ),
       body: Column(
-        children: [],
+        children: [cajas('Digite nombre'), cajas('Digite apellido')],
       ),
     );
   }
 
-  Widget cajas() {
+  Widget cajas(String texto) {
     return Container(
       padding: const EdgeInsets.all(20),
       child: const TextField(

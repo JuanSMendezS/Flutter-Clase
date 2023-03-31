@@ -3,6 +3,7 @@ import 'widgets/alertas.dart';
 import 'widgets/rutas.dart';
 import 'widgets/pestanas.dart';
 import 'widgets/parametros.dart';
+import 'widgets/formulario_func.dart';
 
 void main() {
   runApp(const MyApp());
