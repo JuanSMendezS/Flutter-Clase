@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/alertas.dart';
-import 'widgets/rutas.dart';
-import 'widgets/pestanas.dart';
-import 'widgets/parametros.dart';
-import 'widgets/formulario_func.dart';
+import 'widgets/ds1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,15 +11,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Ejemplo Flutter',
-      initialRoute: '/',
-      routes: {
-        '/': (context) => const Rutas(),
-        '/Alertas': (context) => const Alertas(),
-        '/Pestanas': (context) => const Pestanas(),
-        '/Parametros': (context) => const Parametros(),
-      },
+      home: ds1(),
     );
   }
 }

@@ -13,20 +13,14 @@ class Rutas extends StatelessWidget {
         children: [
           ElevatedButton(
               onPressed: () {
-                Navigator.popAndPushNamed(context, '/Alertas');
+                Navigator.popAndPushNamed(context, '/Images');
               },
-              child: const Text("Alertas")),
+              child: const Text("Images")),
           ElevatedButton(
               onPressed: () {
-                Navigator.popAndPushNamed(context, '/Pestanas');
+                Navigator.popAndPushNamed(context, '/Formulario');
               },
-              child: const Text("Pestañas")),
-          ElevatedButton(
-              onPressed: () {
-                Navigator.popAndPushNamed(context, '/Parametros',
-                    arguments: {'mensaje: Hola mundo', 'estado: activo'});
-              },
-              child: const Text("Parametros"))
+              child: const Text("Formulario")),
         ],
       ),
     );
